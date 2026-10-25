@@ -140,8 +140,8 @@ function App() {
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>
         <a className="pill-button pill-filled header-action" href="/MOHAMED_ALLOUCHE_COMPUTER_SCIENCE.pdf" target="_blank" rel="noreferrer">Download CV ↗</a>
-        <button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-controls="site-nav" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? 'Close' : '+'}
+        <button className="menu-toggle" type="button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} aria-controls="site-nav" onClick={() => setMenuOpen(!menuOpen)}>
+          <span aria-hidden="true">{menuOpen ? '×' : '+'}</span>
         </button>
       </header>
 
