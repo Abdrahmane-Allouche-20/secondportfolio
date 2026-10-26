@@ -139,7 +139,7 @@ function App() {
           <a href="#experience" onClick={closeMenu}>Experience</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>
-        <a className="pill-button pill-filled header-action" href="/MOHAMED_ALLOUCHE_COMPUTER_SCIENCE.pdf" target="_blank" rel="noreferrer">Download CV ↗</a>
+        <a className="pill-button pill-filled header-action" href="/Mohamed_Allouche_Full_Stack_Developer_CV.pdf" target="_blank" rel="noreferrer">Download CV ↗</a>
         <button className="menu-toggle" type="button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} aria-controls="site-nav" onClick={() => setMenuOpen(!menuOpen)}>
           <span aria-hidden="true">{menuOpen ? '×' : '+'}</span>
         </button>
@@ -161,7 +161,7 @@ function App() {
             <p className="hero-tagline">Software Engineer focused on full-stack development, application security, and secure systems.</p>
             <div className="hero-actions">
               <a className="pill-button pill-filled" href="#projects">View projects ↗</a>
-              <a className="pill-button pill-ghost" href="/MOHAMED_ALLOUCHE_COMPUTER_SCIENCE.pdf" target="_blank" rel="noreferrer">Download CV ↗</a>
+              <a className="pill-button pill-ghost" href="/Mohamed_Allouche_Full_Stack_Developer_CV.pdf" target="_blank" rel="noreferrer">Download CV ↗</a>
             </div>
             <p className="location-label">KRAKÓW, POLAND <span>·</span> SOFTWARE / APPLICATION SECURITY</p>
           </div>
