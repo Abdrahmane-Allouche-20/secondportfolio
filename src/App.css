@@ -60,21 +60,21 @@ nav a:nth-child(4):hover { background: var(--carbon); color: var(--white); }
 .band { position: relative; min-height: 600px; overflow: hidden; }
 .band-sky { background: var(--sky); }.band-white { background: var(--white); }.band-gray { background: var(--gray); }.band-mint { background: var(--mint); }.band-lavender { background: var(--lavender); }
 .poster-container { width: min(1440px, calc(100% - 64px)); margin: 0 auto; position: relative; z-index: 1; }
-.hero { min-height: 720px; padding: 70px 0 100px; }
+.hero { min-height: max(600px, calc(100vh - 116px)); height: calc(100vh - 116px); padding: 42px 0 34px; }
 .small-label, .section-topline, .location-label, .project-number, .experience-item time, .footer { font: 700 11px/1.3 var(--mono); letter-spacing: .032em; }
-.hero .small-label { margin: 0 0 38px; }
-.hero-display, .display-heading { max-width: 100%; font: 800 clamp(4rem, 8.5vw, 9rem)/.76 var(--display-font); letter-spacing: -.06em; overflow-wrap: break-word; }
-.hero-display { position: relative; max-width: 1060px; }
+.hero .small-label { margin: 0 0 24px; }
+.hero-display, .display-heading { max-width: 100%; font: 800 clamp(4rem, 6.2vw, 6.5rem)/.78 var(--display-font); letter-spacing: -.06em; overflow-wrap: break-word; }
+.hero-display { position: relative; max-width: 900px; }
 .hero-display span { display: block; }
-.hero-tagline { max-width: 520px; margin: 40px 0 24px; font-size: clamp(1.4rem, 3vw, 2.7rem); line-height: 1; font-weight: 500; letter-spacing: -.025em; }
+.hero-tagline { max-width: 520px; margin: 24px 0 18px; font-size: clamp(1.25rem, 2.2vw, 2.1rem); line-height: 1; font-weight: 500; letter-spacing: -.025em; }
 .hero-actions { display: flex; gap: 8px; }
-.location-label { margin-top: 70px; }
+.location-label { margin-top: 28px; }
 .location-label span { color: var(--ember); padding: 0 8px; }
-.hero-ribbon, .contact-ribbon { position: absolute; width: 155vw; height: 150px; border: 34px solid var(--blue); border-radius: 60px; transform: rotate(-13deg); z-index: 0; pointer-events: none; }
-.ribbon-one { top: 210px; left: -28vw; }.ribbon-two { top: 430px; left: -28vw; transform: rotate(18deg); }
+.hero-ribbon, .contact-ribbon { position: absolute; width: 135vw; height: 112px; border: 24px solid var(--blue); border-radius: 60px; transform: rotate(-13deg); z-index: 0; opacity: .3; pointer-events: none; }
+.ribbon-one { top: 270px; left: -22vw; }.ribbon-two { top: 490px; left: -22vw; transform: rotate(18deg); }
 .sticker { position: absolute; display: grid; place-items: center; border: 1px solid var(--carbon); color: var(--carbon); z-index: 2; font: 800 32px var(--body-font); }
 .sticker-rocket { width: 78px; height: 54px; background: var(--ember); border-radius: 22px 40px 22px 40px; transform: rotate(12deg); }.sticker-coin { width: 72px; height: 72px; border-radius: 50%; background: var(--yellow); }.sticker-check { width: 65px; height: 65px; border-radius: 20px; background: var(--mint); transform: rotate(-12deg); }.sticker-wallet { width: 90px; height: 65px; border-radius: 16px; background: var(--violet); color: var(--white); transform: rotate(9deg); }
-.hero-sticker-one { top: 170px; right: 20%; }.hero-sticker-two { bottom: 110px; right: 9%; transform: rotate(-15deg); }
+.hero-sticker-one { top: 170px; right: 10%; }.hero-sticker-two { bottom: 75px; right: 7%; transform: rotate(-15deg); }
 .section-topline { display: flex; justify-content: space-between; padding-top: 34px; border-top: 1px solid var(--carbon); }
 .about { padding: 40px 0 100px; }.about-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 70px; padding-top: 85px; }.about-layout > *, .experience-layout > *, .contact-layout > * { min-width: 0; }.display-wrap { position: relative; min-width: 0; }.about-check { top: -25px; right: 13%; }.about-copy { max-width: 500px; padding-top: 24px; font-size: 16px; line-height: 1.45; }.large-copy { font-size: 28px; line-height: 1.08; letter-spacing: -.02em; }.inline-link { display: inline-flex; gap: 10px; color: var(--carbon); font: 700 13px var(--body-font); letter-spacing: .02em; text-decoration: none; border-bottom: 1px solid var(--carbon); padding-bottom: 4px; margin-top: 18px; }.inline-link:hover { color: var(--violet); }
 .skills-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 10px; margin-top: 100px; }.skill-card { min-height: 270px; padding: 20px; border: 1px solid var(--carbon); border-radius: 22px; background: var(--mist); display: flex; flex-direction: column; position: relative; overflow: hidden; transition: transform .25s ease, background .25s ease; }.skill-card:nth-child(1) { grid-column: span 4; background: var(--lavender); }.skill-card:nth-child(2) { grid-column: span 4; background: var(--yellow); }.skill-card:nth-child(3) { grid-column: span 4; background: var(--sky); }.skill-card:nth-child(4) { grid-column: span 7; background: var(--mint); }.skill-card:nth-child(5) { grid-column: span 5; background: var(--ember); }.skill-card:hover { transform: translateY(-6px) rotate(-1deg); }.skill-card-topline { display: flex; justify-content: space-between; align-items: center; font: 11px var(--mono); }.skill-arrow { display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid var(--carbon); border-radius: 50%; font-size: 15px; }.skill-card h3 { margin: 30px 0 7px; font: 700 clamp(1.25rem, 2vw, 1.7rem)/1 var(--body-font); letter-spacing: -.03em; }.skill-card p { margin: 0 0 20px; max-width: 210px; font-size: 14px; line-height: 1.2; }.skill-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; }.skill-tags span { display: inline-flex; padding: 6px 8px; border: 1px solid var(--carbon); border-radius: 1600px; background: var(--white); font: 11px var(--mono); line-height: 1; }
@@ -93,8 +93,11 @@ nav a:nth-child(4):hover { background: var(--carbon); color: var(--white); }
 @media (max-width: 1100px) {
   .poster-container { width: min(100% - 48px, 1440px); }
   .site-header { padding-inline: 24px; }
-  .hero { padding-block: 56px 80px; }
-  .hero-display, .display-heading { font-size: clamp(4rem, 9vw, 7.5rem); }
+  .hero { min-height: max(560px, calc(100vh - 116px)); height: calc(100vh - 116px); padding-block: 34px 28px; }
+  .hero-display, .display-heading { font-size: clamp(4rem, 8vw, 7rem); }
+  .hero .small-label { margin-bottom: 20px; }
+  .hero-tagline { margin-top: 20px; }
+  .location-label { margin-top: 22px; }
   .about-layout, .experience-layout, .contact-layout { gap: 42px; }
   .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .project-card:last-child { grid-column: 1 / -1; min-height: 390px; }
@@ -103,15 +106,17 @@ nav a:nth-child(4):hover { background: var(--carbon); color: var(--white); }
 @media (max-width: 800px) {
   .poster-container { width: calc(100% - 32px); }
   .site-header { padding-inline: 16px; }
-  .hero { min-height: auto; padding: 48px 0 68px; }
-  .hero-display, .display-heading { font-size: clamp(3rem, 15vw, 6.5rem); line-height: .8; letter-spacing: -.065em; }
+  .hero { min-height: 0; height: auto; padding: 44px 0 58px; }
+  .hero-display, .display-heading { font-size: clamp(2.85rem, 14vw, 5.3rem); line-height: .82; letter-spacing: -.065em; }
   .hero-display { max-width: 100%; }
-  .hero-tagline { max-width: 30rem; margin-top: 30px; font-size: clamp(1.25rem, 5vw, 1.75rem); }
+  .hero-tagline { max-width: 30rem; margin-top: 28px; font-size: clamp(1.2rem, 4.8vw, 1.6rem); line-height: 1.05; }
   .hero-actions { flex-wrap: wrap; }
-  .location-label { max-width: 25rem; margin-top: 48px; line-height: 1.6; }
-  .hero-ribbon { width: 135vw; height: 86px; border-width: 20px; border-radius: 44px; left: -30vw; opacity: .55; }
+  .location-label { max-width: 25rem; margin-top: 30px; line-height: 1.5; }
+  .hero-ribbon { width: 135vw; height: 70px; border-width: 14px; border-radius: 44px; left: -30vw; opacity: .28; }
   .ribbon-one { top: 190px; }
   .ribbon-two { top: 390px; }
+  .hero-sticker-one { top: 225px; right: -4px; transform: scale(.62) rotate(12deg); }
+  .hero-sticker-two { right: -2px; bottom: 115px; transform: scale(.62) rotate(-15deg); }
   .section-topline { gap: 14px; font-size: 10px; }
   .section-topline span:last-child { text-align: right; }
   .about-layout, .experience-layout, .contact-layout { display: block; padding-top: 56px; }
@@ -140,16 +145,16 @@ nav a:nth-child(4):hover { background: var(--carbon); color: var(--white); }
   .site-header { height: 64px; }
   .logo-mark { width: 38px; height: 38px; }.menu-toggle { width: 38px; height: 38px; font-size: 22px; }
   nav.is-open { top: 78px; left: 16px; right: 16px; }
-  .hero { padding-top: 38px; }
+  .hero { padding-top: 34px; padding-bottom: 48px; }
   .hero .small-label { max-width: 18rem; margin-bottom: 28px; line-height: 1.5; }
-  .hero-display, .display-heading { font-size: clamp(2.7rem, 14.5vw, 4.8rem); }
+  .hero-display, .display-heading { font-size: clamp(2.55rem, 13.5vw, 4.35rem); }
   .hero-actions .pill-button { width: 100%; }
-  .hero-ribbon { width: 125vw; height: 68px; border-width: 16px; left: -25vw; }
+  .hero-ribbon { width: 125vw; height: 52px; border-width: 9px; left: -25vw; opacity: .22; }
   .ribbon-one { top: 175px; }
   .ribbon-two { top: 350px; }
   .sticker { transform: scale(.7) rotate(12deg); }
-  .hero-sticker-one { top: 155px; right: -10px; }
-  .hero-sticker-two { right: -5px; bottom: 75px; }
+  .hero-sticker-one { top: 185px; right: -10px; transform: scale(.55) rotate(12deg); }
+  .hero-sticker-two { right: -5px; bottom: 90px; transform: scale(.55) rotate(-15deg); }
   .about, .projects, .experience, .contact { padding-bottom: 72px; }
   .section-topline { padding-top: 24px; }
   .project-card { min-height: 370px; padding: 16px; }
@@ -162,11 +167,11 @@ nav a:nth-child(4):hover { background: var(--carbon); color: var(--white); }
 @media (max-width: 800px) {
   .hero-ribbon {
     width: 100vw;
-    height: 52px;
-    border-width: 11px;
+    height: 46px;
+    border-width: 8px;
     border-radius: 30px;
     left: 0;
-    opacity: .45;
+    opacity: .28;
   }
   .ribbon-one { top: 190px; }
   .ribbon-two { top: 360px; }
@@ -175,11 +180,11 @@ nav a:nth-child(4):hover { background: var(--carbon); color: var(--white); }
 @media (max-width: 480px) {
   .hero-ribbon {
     width: 92vw;
-    height: 38px;
-    border-width: 8px;
+    height: 34px;
+    border-width: 6px;
     border-radius: 24px;
     left: 4vw;
-    opacity: .35;
+    opacity: .22;
   }
   .ribbon-one { top: 165px; }
   .ribbon-two { top: 325px; }
