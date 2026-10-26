@@ -112,7 +112,7 @@ function App() {
 
   const closeMenu = () => setMenuOpen(false)
   const copyContactNote = async () => {
-    await navigator.clipboard?.writeText('abderrahmaneallouchee@gmail.com')
+    await navigator.clipboard?.writeText('abderrahmane@allouche.dev')
     setCopied(true)
     window.setTimeout(() => setCopied(false), 1600)
   }
@@ -253,8 +253,8 @@ function App() {
               <h2 className="display-heading reveal">LET’S<br />MAKE<br />SOMETHING.</h2>
               <div className="contact-copy reveal">
                 <p className="large-copy">Looking for a software engineer who thinks about product quality and security together? I’d be glad to hear from you.</p>
-                <div className="contact-note"><div><a href="mailto:abderrahmaneallouchee@gmail.com">abderrahmaneallouchee@gmail.com</a><a href="tel:+48504916300">+48 504 916 300</a></div><button onClick={copyContactNote} type="button">{copied ? 'Copied' : 'Copy'} ↗</button></div>
-                <a className="pill-button pill-filled" href="mailto:abderrahmaneallouchee@gmail.com">Start a conversation ↗</a>
+                <div className="contact-note"><div><a href="mailto:abderrahmane@allouche.dev">abderrahmane@allouche.dev</a><a href="tel:+48504916300">+48 504 916 300</a></div><button onClick={copyContactNote} type="button">{copied ? 'Copied' : 'Copy'} ↗</button></div>
+                <a className="pill-button pill-filled" href="https://mail.google.com/mail/?view=cm&fs=1&to=abderrahmane%40allouche.dev" target="_blank" rel="noreferrer">Start a conversation ↗</a>
                 <div className="social-links"><a href="https://github.com/Abdrahmane-Allouche-20/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/abdrrahmaneeee/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.allouche.dev/" target="_blank" rel="noreferrer">Website ↗</a></div>
               </div>
             </div>
