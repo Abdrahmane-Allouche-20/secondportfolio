@@ -161,7 +161,7 @@ function App() {
             <p className="hero-tagline">Software Engineer focused on full-stack development, application security, and secure systems.</p>
             <div className="hero-actions">
               <a className="pill-button pill-filled" href="#projects">View projects ↗</a>
-              <a className="pill-button pill-ghost" href="/MOHAMED_ALLOUCHE_CYBERSECURITY.pdf" target="_blank" rel="noreferrer">Download CV ↗</a>
+              <a className="pill-button pill-ghost" href="/MOHAMED_ALLOUCHE_COMPUTER_SCIENCE.pdf" target="_blank" rel="noreferrer">Download CV ↗</a>
             </div>
             <p className="location-label">KRAKÓW, POLAND <span>·</span> SOFTWARE / APPLICATION SECURITY</p>
           </div>
