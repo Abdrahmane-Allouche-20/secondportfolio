@@ -192,8 +192,8 @@ function App() {
               ))}
             </div>
             <div className="credentials reveal">
-              <div><h3>Languages</h3><p>Arabic (native) · English (C1) · French (C2) · Polish (A1)</p></div>
-              <div><h3>Certifications &amp; training</h3><p>GOOGLE: CyberSecurity CCNA: Introduction to Networks · STEM &amp; Robotics Trainer · NVIDIA Deep Learning Institute · Frontend Developer · Python Programmer</p></div>
+              <div><h3>Languages</h3><p>Arabic (native) · English (C1) · French (B2) · Polish (A1) · German (A1)</p></div>
+              <div><h3>Certifications &amp; training</h3><p>CCNA: Introduction to Networks · STEM &amp; Robotics Trainer · NVIDIA Deep Learning Institute · Frontend Developer · Python Programmer</p></div>
             </div>
           </div>
         </section>
